@@ -47,7 +47,8 @@ function renderTasks() {
                 onchange="toggleTask(${tasks.indexOf(task)})"
             >
             <label>
-                ${task.text} 
+                ${task.text}
+                <span class="date">(${task.date})</span>
                 ${
                   task.priority
                     ? `<span class="priority">(${task.priority})</span>`
@@ -82,10 +83,15 @@ function addTask() {
   const taskText = input.value.trim();
 
   if (taskText) {
+    const now = new Date();
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const date = now.toLocaleDateString("en-US", options);
+
     tasks.push({
       text: taskText,
       completed: false,
       priority: prioritySelect.value,
+      date: date,
     });
     input.value = "";
     prioritySelect.value = "low"; // Reset to default
@@ -112,8 +118,8 @@ function deleteTask(index) {
 }
 
 function clearAllTasks() {
-  // Only clear completed tasks
-  tasks = tasks.filter((task) => !task.completed);
+  // Clear all tasks
+  tasks = [];
   renderTasks();
 }
 

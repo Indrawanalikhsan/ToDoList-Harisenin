@@ -147,3 +147,24 @@ body {
   color: #888;
   margin-left: 10px;
 }
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.clear-btn {
+  width: 100%;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .task-sections {
+    flex-direction: column;
+  }
+}

@@ -173,7 +173,7 @@ span{
   cursor: pointer;
 }
 
-/* Responsive Mobile Adjustments */
+/* Responsive */
 @media screen and (max-width: 600px) {
   body {
     display: flex;
@@ -184,14 +184,14 @@ span{
   }
 
   .container {
-    width: 95%; /* Menggunakan lebar penuh dengan sedikit margin */
+    width: 95%; 
     max-width: 500px;
     padding: 15px;
     margin: 0 auto;
     border-radius: 15px;
   }
 
-  /* Profile Section Responsiveness */
+ 
   .profile-section {
     flex-direction: column;
     align-items: flex-start;
@@ -216,7 +216,7 @@ span{
     margin-top: 5px;
   }
 
-  /* Input Container Responsiveness */
+
   .input-container {
     flex-direction: column;
     gap: 10px;
@@ -230,7 +230,7 @@ span{
     margin-bottom: 5px;
   }
 
-  /* Task Sections Responsiveness */
+
   .task-sections {
     flex-direction: column;
     gap: 15px;
@@ -253,7 +253,7 @@ span{
 
   .task-item input[type="checkbox"] {
     margin: 0;
-    align-self: center; /* Sejajarkan checkbox dengan teks */
+    align-self: center; 
   }
 
   .task-item label {
@@ -268,7 +268,7 @@ span{
     margin-left: auto;
   }
 
-  /* Typography Adjustments */
+
   body {
     font-size: 14px;
   }
@@ -279,14 +279,14 @@ span{
     font-size: 18px;
   }
 
-  /* Ensure no horizontal scrolling */
+
   * {
     max-width: 100%;
     box-sizing: border-box;
   }
 }
 
-/* Tambahan untuk keselarasan di semua perangkat */
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .container {
     width: 90%;

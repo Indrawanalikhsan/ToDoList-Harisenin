@@ -79,13 +79,18 @@ body {
 }
 
 .input-container button {
-  background-color: #007bff;
+  background-color: blanchedalmond;
   color: white;
   border: none;
   padding: 12px 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+span{
+  color: black;
+  font-size: 15px;
 }
 
 .task-sections {

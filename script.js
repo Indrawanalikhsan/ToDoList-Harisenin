@@ -16,11 +16,11 @@ updateDate();
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 function renderTasks() {
-  const todoList = document.getElementById("todo-list");
+  const toDoList = document.getElementById("todo-list");
   const completedList = document.getElementById("completed-list");
 
   // Clear existing lists
-  todoList.innerHTML = "";
+  toDoList.innerHTML = "";
   completedList.innerHTML = "";
 
   // Sort tasks: uncompleted tasks first, then completed tasks
@@ -37,7 +37,7 @@ function renderTasks() {
       taskItem.classList.add("completed");
       completedList.appendChild(taskItem);
     } else {
-      todoList.appendChild(taskItem);
+      toDoList.appendChild(taskItem);
     }
 
     taskItem.innerHTML = `
